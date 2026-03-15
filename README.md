@@ -25,14 +25,18 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+-Game's purpose:
+Glitchy Guesser is a number guessing game where you try to figure out a secret number within a limited number of attempts — the app gives you hints after each guess to guide you higher or lower.
+
+Bugs found:
+The hints were backwards (guessing too high told you to go higher), the secret was sometimes compared as a string instead of a number making hints completely wrong, the New Game button didn't actually reset the game, difficulty levels used the wrong number ranges, and the score could go negative.
+
+Fixes applied:
+Swapped the hint messages so they point the right direction, removed the string/int type mismatch so comparisons are always numeric, fixed the New Game button to reset status and history, corrected the number ranges per difficulty, and added a score floor of 0 so it can never go negative.
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- ![alt text](image.png)
 
 ## 🚀 Stretch Features
 
-- [ ] [If you choose to complete Challenge 4, insert a screenshot of your Enhanced Game UI here]
